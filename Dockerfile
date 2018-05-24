@@ -21,4 +21,4 @@ RUN ["cp", "gff3_annotation_stuff_b.pm", "/etc/perl" ]
 ADD run_summary_script.sh /usr/bin/
 RUN [ "chmod", "+x",  "/usr/bin/look_at_transcripts.pl" ]
 RUN [ "chmod", "+x",  "/usr/bin/run_summary_script.sh" ]
-ENTRYPOINT ["sh", "run_summary_script.sh"]
+ENTRYPOINT ["sh", "/usr/bin/run_summary_script.sh"]
